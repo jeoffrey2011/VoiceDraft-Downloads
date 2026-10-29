@@ -58,3 +58,13 @@ bash uninstall.sh --purge --stopped
 发布状态及许可范围见 RELEASE_NOTES.md；权限、数据流及停止录音见 PRIVACY.md；第三方条款见 THIRD_PARTY_NOTICES.md、NOTICE 和 LICENSE。本说明不承诺跨平台完全兼容或独立紧急停止能力。
 
 授权对象和更新后排障见 AUTHORIZATION.md：先确认运行副本，再结束录音并退出旧进程、重启正确程序，仅在必要时重新添加对应的失效授权。预览包采用 ad-hoc 临时签名、未公证，更新后可能重新授权；本说明未经过本轮真实权限弹窗验收，不要求删数据、重置全部权限或关闭安全保护。
+
+## Windows 自动验证进展（2026-10-28）
+
+**Windows 自动测试、源码构建安装和原生后端编译已通过，真实语音及桌面交互仍待验收。**
+
+对应 CLI 源码提交 `d984828bd33be3e73227e0cc1aa4c3e1afac8a53`，GitHub Actions 运行 `40819967412` 的 macOS、Windows 两项任务均成功。Windows 检查包括适用的 Python 测试、从源码构建 wheel 并安装、命令入口、安装后隔离模拟运行，以及 C# 原生后端编译；Mac/POSIX 专用测试在 Windows 按平台范围跳过。源码构建安装不等于 Windows 独立发行包安装验收。
+
+尚未验证 Windows 真实麦克风和系统语音识别、向其他应用填入文字、快捷键、登录自启、异常恢复及普通用户电脑上的完整安装体验。尚未提供 Windows 独立运行包或面向用户验证的平台 wheel，不代表 Windows 版已稳定可用。
+
+此结果属于后续 CI 修订，不追溯为原 `preview-check1` Mac 包或历史源码 ZIP 已完成 Windows 验收；现有运行包、源码 ZIP 和 SHA-256 保持不变。
