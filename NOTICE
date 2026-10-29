@@ -1,0 +1,13 @@
+VoiceDraft GUI and VoiceDraft CLI
+
+VoiceDraft project code and project documentation in these distributions are
+provided under the Apache License, Version 2.0; see LICENSE. Copyright in
+individual contributions remains with the respective rightsholders. This notice
+does not assert ownership of third-party code, Apple system symbols or trademarks.
+Third-party materials retain their own licenses and notices; see
+THIRD_PARTY_NOTICES.md and the CLI package's licenses directory.
+
+Implementation source repositories are currently private. That distribution
+choice does not add restrictions to the rights granted by applicable licenses.
+This is an independent project, not an Apple, Python, PyInstaller, Google,
+Baidu, OpenAI, DeepSeek or WeChat endorsed product.
